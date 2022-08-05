@@ -1,31 +1,46 @@
--[01] Update 
+# Floriza
 
+
+## Update Python
+
+```bash
 python -m pip install --upgrade pip
 python -m pip install --upgrade wheel
 python -m pip install --upgrade setuptools
 python -m pip install --upgrade virtualenv
+```
 
--[02] Create a virtual environment
+## Create a virtual environment
 
+```bash
 cd /path/to/project
+```
 
-# WINDOWS
+### WINDOWS
 
-* Set-ExecutionPolicy Unrestricted -Scope Process
+```bash
+Set-ExecutionPolicy Unrestricted -Scope Process
 python -m venv .env
 
 * Activate It
 .\.venv\Scripts\activate
+```
 
-# LINUX
+### LINUX
 
+```bash
 python -m venv .venv
-
-* Activate It
 source .venv/bin/activate
+```
 
+## Install packages
 
--[03] Install packages
-
+```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+## Run Application
+```bash
+flask run
+```
