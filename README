@@ -1,0 +1,31 @@
+-[01] Update 
+
+python -m pip install --upgrade pip
+python -m pip install --upgrade wheel
+python -m pip install --upgrade setuptools
+python -m pip install --upgrade virtualenv
+
+-[02] Create a virtual environment
+
+cd /path/to/project
+
+# WINDOWS
+
+* Set-ExecutionPolicy Unrestricted -Scope Process
+python -m venv .env
+
+* Activate It
+.\.venv\Scripts\activate
+
+# LINUX
+
+python -m venv .venv
+
+* Activate It
+source .venv/bin/activate
+
+
+-[03] Install packages
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
