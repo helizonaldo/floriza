@@ -16,6 +16,7 @@ def index():
 def process_form():
  
     result = request.form.to_dict(flat=False)
+    print(result)
     return jsonify(result)
 
     #data = request.form
