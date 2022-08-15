@@ -191,7 +191,7 @@ body {
     transform: rotate(-45deg);
   }
   .form-check-input:checked, .form-check-input:focus {
-    background-color: #DC3545 !important;
+    background-color: #15ce43 !important;
     outline: none !important;
     border: none !important;
   }
@@ -213,7 +213,7 @@ body {
     padding: 8px 14px;
   }
   input[type="text"]:focus, input[type="email"]:focus {
-    border: 1px solid #DC3545;
+    border: 1px solid #15ce43;
     border-radius: 5px;
     outline: 0px !important;
     -webkit-appearance: none;
@@ -259,7 +259,7 @@ body {
     left: 0;
   }
   #preloader {
-    background-image: url('/static/images/preloader.png');
+    background-image: url('/static/images/Uniklinik_Logo_CMYK_RZ.jpg');
     width: 120px;
     height: 119px;
     border-top-color: #fff;
