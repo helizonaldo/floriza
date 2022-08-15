@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <title>COVID-19 Self Checker Multi-step Form</title>
+      <title>Einwilligungserklärung Multi-step Form</title>
       <!-- CSS -->
       <link href="/static/css/bootstrap.min.css" rel="stylesheet">
       <link href="/static/css/style.css" rel="stylesheet">
@@ -22,62 +22,109 @@
           <!-- TITLE -->
           <div class="col-lg-4 offset-lg-1 mx-0 px-0">
               <div id="title-container">
-                  <img class="covid-image" src="/static/images/covid-check.png">
-                  <h2>COVID-19</h2>
-                  <h3>Self Checker Form</h3>
-                  <p>A clinical assessment multi-step form that will assist individuals on deciding when to seek testing or medical care if they suspect they or someone they know has contracted COVID-19 or has come into close contact with someone who has COVID-19</p>
+                <!-- Logo -->
+                  <!-- <img class="covid-image" src="/static/images/covid-check.png"> -->
+                  <img class="covid-image" src="/static/images/Uniklinik_Logo_CMYK_RZ.jpg"> 
+                  <h2>Patienteneiwilligung</h2>
+                  <h3>Liebe Patienten,</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet neque ornare, feugiat ligula eu, sodales 
+                    lectus. Phasellus non risus nec nulla ullamcorper commodo at non arcu. Nam ac nunc nunc. Vivamus in fringilla mi. 
+                    Donec a ante consectetur, accumsan mi nec, porta nunc. Donec consequat laoreet tristique. Phasellus dictum lorem 
+                    consequat lorem porttitor, a cursus diam dapibus.</p>
               </div>
           </div>
           <!-- FORMS -->
           <div class="col-lg-7 mx-0 px-0">
               <div class="progress">
-                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div>
+                  <!-- <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div> -->
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0%"></div>
               </div>
               <div id="qbox-container">
                   <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate="" action="{{ url_for('home.process_form') }}">
                       <div id="steps-container">
                           <div class="step d-block">
-                              <h4>Have you recently been in close contact with someone who has COVID-19?</h4>
+                              <h4>Einwilligung in die Nutzung von Patientendaten und Krankenkassendaten für medizinische Forschungszwecke</h4>
+                              <p>1.	Erhebung, Verarbeitung und wissenschaftliche Nutzung meiner Patientendaten, wie in der Patienteninformation beschrieben; dies umfasst</p>
+                                <p>1.1 die Verarbeitung und Nutzung meiner Patientendaten für die medizinische Forschung ausschließlich wie in der Patienteninformation beschrieben und mit 
+                                    getrennter Verwaltung des Namens und anderer direkt identifizierender Daten (Codierung). Unter der Adresse www.medizininformatik-initiative.de/datennutzung 
+                                    kann ich mich für einen E-Mail-Verteiler registrieren, der per E-Mail über alle neuen Studien, die mit den Patientendaten durchgeführt werden, 
+                                    vor deren Durchführung informiert (siehe Punkte 1.1, 1.2 und 1.3 der Patienteninformation).
+                                </p>	
+                                <p>1.2 die wissenschaftliche Analyse und Nutzung meiner codierten Patientendaten durch Dritte wie z.B. durch andere Universitäten/Institute/forschende Unternehmen; 
+                                dies kann auch eine Weitergabe für Forschungsprojekte im Ausland umfassen, wenn in diesen europäisches Datenschutzrecht gilt oder die Europäische Kommission ein 
+                                angemessenes Datenschutzniveau bestätigt hat. An einem etwaigen kommerziellen Nutzen aus der Forschung werde ich nicht beteiligt. 
+                                Vor einer Weitergabe an Forscher außerhalb meiner behandelnden Einrichtung erfolgt zudem eine weitere Ersetzung des internen Kennzeichens durch eine neue Zeichenkombination.
+                                </p>
+                                <p>1.3	die Möglichkeit einer Zusammenführung meiner Patientendaten mit Daten in Datenbanken anderer Forschungspartner. Voraussetzung ist, dass ich dieser Nutzung 
+                                    bei den entsprechenden Forschungspartnern auch zugestimmt habe. Ich willige ein in die Erhebung, Verarbeitung, Speicherung und 
+                                    wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1 der Patienteninformation 
+                                    beschrieben.
+                                </p>
                               <div class="form-check ps-0 q-box">
                                   <div class="q-box__question">
                                       <input class="form-check-input question__input" id="q_1_yes" name="q_1" type="radio" value="Yes"> 
-                                      <label class="form-check-label question__label" for="q_1_yes">Yes</label>
+                                      <label class="form-check-label question__label" for="q_1_yes">Ja</label>
                                   </div>
                                   <div class="q-box__question">
                                       <input checked="" class="form-check-input question__input" id="q_1_no" name="q_1" type="radio" value="No"> 
-                                      <label class="form-check-label question__label" for="q_1_no">No</label>
+                                      <label class="form-check-label question__label" for="q_1_no">Nein</label>
                                   </div>
                               </div>
                           </div>
                           <div class="step">
-                              <h4>Are you experiencing a high fever, dry cough, tiredness and loss of taste or smell?</h4>
+                              <h4>2. Übertragung und wissenschaftliche Nutzung meiner Krankenkassendaten</h4>
+                              <p>Hiermit ermächtige ich meine Krankenkasse auf Anforderung durch das Universitätsklinikum Aachen Daten über von mir in Anspruch genommene 
+                                ärztliche Leistungen in der ambulanten Versorgung und bei stationären Aufenthalten, über verordnete Heil- und Hilfsmittel sowie Arzneimittel 
+                                und Angaben zum Bereich Pflege an das Universitätsklinikum Aachen so wie in der Patienteninformation beschrieben, zu übermitteln, und zwar:
+                            </p>
+                            <p>2.1 Einmalig rückwirkend für die Daten der vergangenen 5 Kalenderjahre. Mit der dafür nötigen Übermittlung meiner Krankenversicherungs-Nummer 
+                                an das Universitätsklinikum Aachen bin ich einverstanden.
+                            </p>
                               <div class="form-check ps-0 q-box">
                                   <div class="q-box__question">
                                       <input class="form-check-input question__input" id="q_2_yes" name="q_2" type="radio" value="Yes"> 
-                                      <label class="form-check-label question__label" for="q_2_yes">Yes</label>
+                                      <label class="form-check-label question__label" for="q_2_yes">Ja</label>
                                   </div>
                                   <div class="q-box__question">
                                       <input checked="" class="form-check-input question__input" id="q_2_no" name="q_2" type="radio" value="No"> 
-                                      <label class="form-check-label question__label" for="q_2_no">No</label>
+                                      <label class="form-check-label question__label" for="q_2_no">Nein</label>
                                   </div>
                               </div>
                           </div>
                           <div class="step">
-                              <h4>Are you having diarrhoea, stomach pain, conjunctivitis, vomiting and headache?</h4>
+                            <h4>2. Übertragung und wissenschaftliche Nutzung meiner Krankenkassendaten</h4>
+                            <p>2.2 Für Daten ab dem Datum meiner Unterschrift über einen Zeitraum von 5 Jahren. Mit der dafür nötigen Übermittlung meiner 
+                            Krankenversicherungsnummer. an das Universitätsklinikum Aachen bin ich einverstanden.
+                            </p>
                               <div class="form-check ps-0 q-box">
                                   <div class="q-box__question">
                                       <input class="form-check-input question__input" id="q_3_yes" name="q_3" type="radio" value="Yes"> 
-                                      <label class="form-check-label question__label" for="q_3_yes">Yes</label>
+                                      <label class="form-check-label question__label" for="q_3_yes">Ja</label>
                                   </div>
                                   <div class="q-box__question">
                                       <input checked="" class="form-check-input question__input" id="q_3_no" name="q_3" type="radio" value="No"> 
-                                      <label class="form-check-label question__label" for="q_3_no">No</label>
+                                      <label class="form-check-label question__label" for="q_3_no">Nein</label>
                                   </div>
                               </div>
                           </div>
                           <div class="step">
-                              <h4>Have you traveled to any of these countries with the highest number of COVID-19 cases in the world for the past 2 weeks?</h4>
-                              <div class="row">
+                            <h4>3. Möglichkeit einer erneuten Kontaktaufnahme</h4>
+                            <p>3.1 Ich willige ein, dass ich vom Universitätsklinikum Aachen erneut kontaktiert werden darf, um gegebenenfalls zusätzliche für wissenschaftliche 
+                                Fragen relevante Informationen zur Verfügung zu stellen, um über neue Forschungsvorhaben/Studien informiert zu werden, und/oder um meine 
+                                Einwilligung in die Verknüpfung meiner Patientendaten mit medizinischen Informationen aus anderen Datenbanken einzuholen 
+                                (siehe Punkt 3.1 der Patienteninformation).
+                            </p>
+                            <div class="form-check ps-0 q-box">
+                                <div class="q-box__question">
+                                    <input class="form-check-input question__input" id="q_4_yes" name="q_4" type="radio" value="Yes"> 
+                                    <label class="form-check-label question__label" for="q_4_yes">Ja</label>
+                                </div>
+                                <div class="q-box__question">
+                                    <input checked="" class="form-check-input question__input" id="q_4_no" name="q_4" type="radio" value="No"> 
+                                    <label class="form-check-label question__label" for="q_4_no">Nein</label>
+                                </div>
+                            </div>
+                              <!-- <div class="row">
                                   <div class="col-lg-6">
                                       <div class="form-check ps-0 q-box">
                                           <div class="q-box__question">
@@ -126,11 +173,24 @@
                                           </div>
                                       </div>
                                   </div>
-                              </div>
+                              </div> -->
                           </div>
                           <div class="step">
-                              <h4>Are you experiencing any of these serious symptoms of COVID-19 below?</h4>
-                              <div class="row">
+                              <h4>3. Möglichkeit einer erneuten Kontaktaufnahme</h4>
+                              <p>3.2 Ich willige ein, dass ich vom Universitätsklinikum Aachen wieder kontaktiert werden darf, um über medizinische 
+                                Zusatzbefunde informiert zu werden (siehe Punkt 3.2 der Patienteninformation).
+                            </p>
+                            <div class="form-check ps-0 q-box">
+                                <div class="q-box__question">
+                                    <input class="form-check-input question__input" id="q_5_yes" name="q_5" type="radio" value="Yes"> 
+                                    <label class="form-check-label question__label" for="q_5_yes">Ja</label>
+                                </div>
+                                <div class="q-box__question">
+                                    <input checked="" class="form-check-input question__input" id="q_5_no" name="q_5" type="radio" value="No"> 
+                                    <label class="form-check-label question__label" for="q_5_no">Nein</label>
+                                </div>
+                            </div>
+                              <!-- <div class="row">
                                   <div class="form-check ps-0 q-box">
                                       <div class="q-box__question">
                                           <input class="form-check-input question__input" id="q_5_breathing" name="q_5_breathing" type="checkbox" value="breathing"> 
@@ -155,34 +215,57 @@
                                           <label class="form-check-label question__label" for="q_5_pale">Pale, gray or blue-colored skin, lips or nail beds</label>
                                       </div>
                                   </div>
-                              </div>
+                              </div> -->
                           </div>
                           <div class="step">
-                              <h4>Provide us with your personal information</h4>
+                            <h4>4. Geltungsdauer meiner Einwilligung</h4>
+                            <p>Meine Einwilligung in die Erhebung von Patientendaten bei Aufenthalten im Universitätsklinikum Aachen gilt für einen 
+                                Zeitraum von fünf Jahren ab meiner Einwilligungserklärung. Sollte ich nach Ablauf von fünf Jahren wieder im Universitätsklinikum 
+                                Aachen vorstellig werden, kann ich erneut meine Einwilligung erteilen. Die Nutzung der von mir erhobenen Daten bleibt über diesen 
+                                Zeitraum hinaus zulässig (Punkt 4 der Patienteninformation).
+                            </p>
+                            <h4>5. Widerrufsrecht</h4>
+                            <p>Meine Einwilligung ist freiwillig!
+                                Ich kann meine Einwilligung jederzeit ohne Angabe von Gründen beim Universitätsklinikum Aachen vollständig oder in Teilen widerrufen, 
+                                ohne dass mir irgendwelche Nachteile entstehen.
+                                Beim Widerruf werden die auf Grundlage dieser Einwilligung gespeicherten Daten gelöscht oder anonymisiert, sofern dies gesetzlich zulässig ist. 
+                                Daten aus bereits durchgeführten Analysen können nicht mehr entfernt werden (Punkt 5 der Patienteninformation).
+                                Ich wurde über die Nutzung meiner Patientendaten und Krankenkassendaten sowie die damit verbundenen Risiken informiert und erteile im vorgenannten 
+                                Rahmen meine Einwilligung. Ich hatte ausreichend Bedenkzeit und alle meine Fragen wurden zufriedenstellend beantwortet.
+                                Ich wurde darüber informiert, dass ich ein Exemplar der Patienteninformation und eine Kopie der unterschriebenen Einwilligungserklärung erhalten werde.
+                          </p>
+                        </div>
+                          <div class="step">
+                              <h4>Teinehmer/Aufklärende Person</h4>
                               <div class="mt-1">
-                                  <label class="form-label">Complete Name:</label> 
-                                  <input class="form-control" id="full_name" name="full_name" type="text">
+                                  <label class="form-label">Pseudonym:</label> 
+                                  <!-- <input class="form-control" id="full_name" name="full_name" type="text"> -->
+                                  <input class="form-control" id="pseudonym" name="pseudonym" type="text">
                               </div>
                               <div class="mt-2">
-                                  <label class="form-label">Complete Address:</label> 
-                                  <input class="form-control" id="address" name="address" type="text">
+                                  <label class="form-label">Ort der Unterschrift:</label> 
+                                  <!-- <input class="form-control" id="address" name="address" type="text"> -->
+                                  <input class="form-control" id="ort" name="ort" type="text">
                               </div>
                               <div class="mt-2">
-                                  <label class="form-label">Email:</label> 
-                                  <input class="form-control" id="email" name="email" type="email">
+                                  <label class="form-label">Datum der Unterschrift:</label> 
+                                  <!-- <input class="form-control" id="email" name="email" type="email"> -->
+                                  <input class="form-control" id="datum" name="datum" type="email">
                               </div>
                               <div class="mt-2">
-                                  <label class="form-label">Phone / Mobile Number:</label> 
-                                  <input class="form-control" id="phone" name="phone" type="text">
+                                  <label class="form-label">Unterschrift:</label> 
+                                  <!-- <input class="form-control" id="phone" name="phone" type="text"> -->
+                                  <input class="form-control" id="unterschrift" name="unterschrift" type="text">
                               </div>
-                              <div class="row mt-2">
-                                  <div class="col-lg-2 col-md-2 col-3">
-                                      <label class="form-label">Age:</label>
-                                      <div class="input-container">
-                                          <input class="form-control" id="age" name="age" type="text">
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-8">
+                              <div class="mt-2">
+                                  <!-- <div class="col-lg-2 col-md-2 col-3"> -->
+                                      <label class="form-label">Arzt-ID:</label>
+                                      <!-- <div class="input-container"> -->
+                                          <!-- <input class="form-control" id="age" name="age" type="text"> -->
+                                          <input class="form-control" id="arzt-id" name="arzt-id" type="text">
+                                      <!-- </div> -->
+                                  <!-- </div> -->
+                                  <!-- <div class="col-lg-8">
                                       <div id="input-container">
                                           <input class="form-check-input" name="gender" type="radio" value="male"> 
                                           <label class="form-check-label radio-lb">Male</label> 
@@ -191,30 +274,30 @@
                                           <input checked="" class="form-check-input" name="gender" type="radio" value="undefined"> 
                                           <label class="form-check-label radio-lb">Rather not say</label>
                                       </div>
-                                  </div>
+                                  </div> -->
                               </div>
                           </div>
                           <div class="step">
                               <div class="mt-1">
                                   <div class="closing-text">
-                                      <h4>That's about it! Stay healthy!</h4>
-                                      <p>We will assess your information and will let you know soon if you need to get tested for COVID-19.</p>
+                                      <h4>Danke für Ihre Unterstützung! Stay healthy!</h4>
+                                      <!-- <p>We will assess your information and will let you know soon if you need to get tested for COVID-19.</p> -->
                                       <p>Click on the submit button to continue.</p>
                                   </div>
                               </div>
                           </div>
                           <div id="success">
                               <div class="mt-5">
-                                  <h4>Success! We'll get back to you ASAP!</h4>
-                                  <p>Meanwhile, clean your hands often, use soap and water, or an alcohol-based hand rub, maintain a safe distance from anyone who is coughing or sneezing and always wear a mask when physical distancing is not possible.</p>
-                                  <a class="back-link" href="">Go back from the beginning ➜</a>
+                                  <h4>Fertig!</h4>
+                                  <!-- <p>Meanwhile, clean your hands often, use soap and water, or an alcohol-based hand rub, maintain a safe distance from anyone who is coughing or sneezing and always wear a mask when physical distancing is not possible.</p> -->
+                                  <a class="back-link" href="">Zurück zum Start ➜</a>
                               </div>
                           </div>
                       </div>
                       <div id="q-box__buttons">
-                          <button id="prev-btn" type="button" class="d-none">Previous</button> 
-                          <button id="next-btn" type="button" class="d-inline-block">Next</button> 
-                          <button id="submit-btn" type="submit" class="d-none">Submit</button>
+                          <button id="prev-btn" type="button" class="d-none">Zurück</button> 
+                          <button id="next-btn" type="button" class="d-inline-block">Weiter</button> 
+                          <button id="submit-btn" type="submit" class="d-none">Senden</button>
                       </div>
                   </form>
               </div>

@@ -1,4 +1,4 @@
-# Floriza
+# BC-App
 
 
 ## Update Python
@@ -20,7 +20,7 @@ cd /path/to/project
 
 ```bash
 Set-ExecutionPolicy Unrestricted -Scope Process
-python -m venv .env
+python -m venv .venv
 
 * Activate It
 .\.venv\Scripts\activate
